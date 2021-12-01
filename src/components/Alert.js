@@ -2,8 +2,11 @@ import React from 'react'
 
 function Alert(props) {
     return (
-        props.alert && <div className={`container alert alert-${props.alert.type} my-2`} role="alert">
+        <div className="my-2" style={{height:'60px',}}>
+          
+        {props.alert && <div className={`container alert alert-${props.alert.type}`} role="alert">
          {props.alert.mesg}
+      </div>}
       </div>
     )
 }
